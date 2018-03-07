@@ -9,3 +9,9 @@
    
   - name: Install tmux
     apt: name=tmux
+
+  - name: Install fish
+    apt: name=fish
+
+  - name: Install vlan
+    apt: name=vlan
