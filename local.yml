@@ -4,8 +4,6 @@
   - name: Install packages
     apt: name={{item}}
     with_items:
-     - htop
-     - calibre
-     - vlan
-     - fish
-     - tmux
+      - htop
+      - mc
+      - tmux
