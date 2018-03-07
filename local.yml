@@ -18,3 +18,9 @@
 
   - name: Install calibre
     apt: name=calibre
+
+  - name: Install clementine
+    apt: name=clementine
+
+  - name: Install GIMP
+    apt: name=GIMP
