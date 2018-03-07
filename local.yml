@@ -22,5 +22,5 @@
   - name: Install clementine
     apt: name=clementine
 
-  - name: Install GIMP
-    apt: name=GIMP
+  - name: Install gimp
+    apt: name=gimp
