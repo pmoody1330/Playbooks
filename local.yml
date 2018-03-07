@@ -24,3 +24,6 @@
 
   - name: Install gimp
     apt: name=gimp
+
+  - name: Install geany
+    apt: name=geany
