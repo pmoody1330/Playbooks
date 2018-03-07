@@ -1,0 +1,9 @@
+sudo apt install software-properties-common
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt install update
+sudo apt install ansible
+cd ./Documents/Playbooks
+git add local.yml
+git commit -m 'Playbook'
+git push origin master
+sudo ansible-pull -U https://github.com/pmoody1330/Playbooks.git
