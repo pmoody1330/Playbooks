@@ -1,0 +1,11 @@
+- hosts: localhost
+  become: true
+  tasks:
+  - name: Install packages
+    apt: name={{item}}
+    with items:
+     - htop
+     - calibre
+     - vlan
+     - fish
+     - tmux
