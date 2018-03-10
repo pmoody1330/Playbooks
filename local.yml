@@ -27,6 +27,3 @@
 
   - name: Install geany
     apt: name=geany
-
-  - name: Install wine
-    apt: name=wine
