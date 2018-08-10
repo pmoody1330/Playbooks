@@ -27,3 +27,6 @@
 
   - name: Install geany
     apt: name=geany
+
+  - name: Install meld
+    apt: name=meld
