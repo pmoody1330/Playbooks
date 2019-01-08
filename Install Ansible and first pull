@@ -7,3 +7,7 @@ git add local.yml
 git commit -m 'Playbook'
 git push origin master
 sudo ansible-pull -U https://github.com/pmoody1330/Playbooks.git
+
+
+#run a local yaml file
+ansible-playbook -c local  admin.yml
