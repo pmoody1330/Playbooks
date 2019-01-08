@@ -39,6 +39,9 @@
 
   - name: Install notepadqq
     snap:
-      name:
-        - notepadqq
-        - powershell
+      name: notepadqq
+      
+   - name: Install powershell
+    snap:
+      name: powershell
+      classic: yes
