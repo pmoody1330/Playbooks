@@ -38,10 +38,7 @@
     apt: name=snapd
 
   - name: Install notepadqq
-    snap:
-      name: notepadqq
+    command: snap install notepadqq
       
   - name: Install powershell
-    snap:
-      name: powershell
-      classic: yes
+    command: snap install powershell --classic
