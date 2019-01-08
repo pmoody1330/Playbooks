@@ -37,7 +37,7 @@
   - name: Install snap
     apt: name=snapd
 
-  - name: Install foo
+  - name: Install notepadqq
     snap:
       name:
         - notepadqq
