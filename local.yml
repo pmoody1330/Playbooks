@@ -30,3 +30,9 @@
 
   - name: Install meld
     apt: name=meld
+
+  - name: Install mplayer
+    apt: name=mplayer
+
+  - name: Install snap
+    apt: name=snapd
