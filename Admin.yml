@@ -1,0 +1,9 @@
+- hosts: localhost
+  become: true
+  tasks:
+  - name: Install SSH
+    apt: name=openssh-server
+
+  - name: Install zenmap
+    apt: name=zenmap
+   
