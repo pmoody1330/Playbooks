@@ -7,3 +7,5 @@
   - name: Install zenmap
     apt: name=zenmap
    
+  - name: Install Visual Studio Code
+    command: snap install vscode --classic
