@@ -14,6 +14,5 @@
     apt: name=flashplugin-installer
 
   - name: Install ICA Client for Citrix
-  apt: deb="/home/{{ ansible_env.USER }}/Downloads/icaclient_18.10.0.11_amd64.deb"
-  sudo: true
+  apt: deb="/home/pmoody/Downloads/icaclient_18.10.0.11_amd64.deb"
   when: icaclient_18.10.0.11_amd64.deb.rc == 1
