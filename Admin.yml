@@ -16,3 +16,6 @@
   - name: Install ICA Client for Citrix
     apt: deb="/home/pmoody/Downloads/icaclient_18.10.0.11_amd64.deb"
     become: sudo
+
+  - name: Install kismet
+    apt: name=kismet
