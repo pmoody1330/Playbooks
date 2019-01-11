@@ -12,3 +12,8 @@
     
   - name: Install Adobe Flash Player
     apt: name=flashplugin-installer
+
+  - name: Install ICA Client for Citrix
+  apt: deb="/home/{{ ansible_env.USER }}/Downloads/icaclient_18.10.0.11_amd64.deb"
+  sudo: true
+  when: icaclient_18.10.0.11_amd64.deb.rc == 1
