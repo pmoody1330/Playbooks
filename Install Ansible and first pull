@@ -15,3 +15,5 @@ ansible-playbook -c local  admin.yml
 #Admin.yml references the ica client this must be downloaded and put in the correct path - check the version number on the file too.
 
 https://www.citrix.com/downloads/workspace-app/
+
+VLAN is the 802.1q drivers 
