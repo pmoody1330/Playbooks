@@ -19,3 +19,6 @@
 
   - name: Install kismet
     apt: name=kismet
+
+  - name: Install vlc
+    apt: name=vlc
