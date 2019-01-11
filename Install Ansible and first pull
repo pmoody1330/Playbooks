@@ -11,3 +11,7 @@ sudo ansible-pull -U https://github.com/pmoody1330/Playbooks.git
 
 #run a local yaml file
 ansible-playbook -c local  admin.yml
+
+#Admin.yml references the ica client this must be downloaded and put in the correct path - check the version number on the file too.
+
+https://www.citrix.com/downloads/workspace-app/
