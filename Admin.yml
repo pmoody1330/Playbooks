@@ -22,3 +22,26 @@
 
   - name: Install vlc
     apt: name=vlc
+
+  - name: Install python-pip
+    apt: name=python-pip
+
+  - name: Install AWS CLI
+    apt: name=awscli
+
+  - name: Install gparted
+    apt: name=gparted
+
+  - name: Create Playbooks directory
+    file:
+      path: ~/Documents/Playbooks
+      state: directory
+      owner: pmoody
+      mode: 0775
+
+  - name: Create SQL directory
+    file:
+      path: ~/Documents/SQL
+      state: directory
+      owner: pmoody
+      mode: 0775
