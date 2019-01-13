@@ -31,12 +31,9 @@
 
   - name: Install gparted
     apt: name=gparted
-<<<<<<< HEAD
-=======
     
   - name: Install Docker
     apt: name=docker.io 
->>>>>>> 3d248d84c8aa9cfccb7482be72692948ea393634
 
   - name: Create Playbooks directory
     file:
@@ -51,7 +48,3 @@
       state: directory
       owner: pmoody
       mode: 0775
-<<<<<<< HEAD
-
-=======
->>>>>>> 3d248d84c8aa9cfccb7482be72692948ea393634
