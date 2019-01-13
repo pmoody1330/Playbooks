@@ -31,6 +31,9 @@
 
   - name: Install gparted
     apt: name=gparted
+    
+  - name: Install Docker
+    apt: name=docker.io 
 
   - name: Create Playbooks directory
     file:
