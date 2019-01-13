@@ -53,3 +53,4 @@
       repo: 'https://github.com/pmoody1330/Playbooks.git'
       dest: ~/Documents/Playbooks
       force: yes
+      refspec: '+refs/pull/*:refs/heads/*'
