@@ -48,3 +48,7 @@
       state: directory
       owner: pmoody
       mode: 0775
+      
+  - git:
+    repo: https://github.com/pmoody1330/Playbooks.git
+    dest: ~/Documents/Playbooks
