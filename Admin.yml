@@ -37,7 +37,7 @@
 
   - name: Create Playbooks directory
     file:
-      path: ~/Documents/Playbooks
+      path: home/pmoody/Documents/Playbooks
       state: directory
       owner: pmoody
       mode: 0775
