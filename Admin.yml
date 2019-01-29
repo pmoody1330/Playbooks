@@ -54,3 +54,9 @@
       dest: home/pmoody/Documents/Playbooks
       force: yes
       refspec: '+refs/pull/*:refs/heads/*'
+
+  - git:
+      repo: 'https://pmoody_TN@bitbucket.org/pmoody_TN/powershell_private.git'
+      dest: home/pmoody/Documents/Powershell
+      force: yes
+      refspec: '+refs/pull/*:refs/heads/*'
