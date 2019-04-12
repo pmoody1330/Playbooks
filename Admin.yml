@@ -9,6 +9,9 @@
    
   - name: Install Visual Studio Code
     command: snap install vscode --classic
+
+  - name: Install Notepad++
+    command: snap install notepad-plus-plus
     
   - name: Install Adobe Flash Player
     apt: name=flashplugin-installer
@@ -52,5 +55,11 @@
   - git:
       repo: 'https://github.com/pmoody1330/Playbooks.git'
       dest: home/pmoody/Documents/Playbooks
+      force: yes
+      refspec: '+refs/pull/*:refs/heads/*'
+
+  - git:
+      repo: 'https://pmoody_TN@bitbucket.org/pmoody_TN/powershell_private.git'
+      dest: home/pmoody/Documents/Powershell
       force: yes
       refspec: '+refs/pull/*:refs/heads/*'
