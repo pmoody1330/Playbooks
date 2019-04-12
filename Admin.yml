@@ -14,7 +14,7 @@
     apt: name=flashplugin-installer
 
   - name: Install ICA Client for Citrix
-    apt: deb="/home/pmoody/Downloads/icaclient_18.10.0.11_amd64.deb"
+    apt: deb="/home/pmoody/Downloads/icaclient_19.3.0.5_amd64.deb"
     become: sudo
 
   - name: Install kismet
