@@ -39,6 +39,9 @@
 
   - name: Install notepadqq
     command: snap install notepadqq
+    
+  - name: Install IrfanView
+    command: snap install irfanview
       
   - name: Install powershell
     command: snap install powershell --classic
