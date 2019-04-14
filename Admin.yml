@@ -66,3 +66,9 @@
       dest: Powershell
       force: yes
       refspec: '+refs/pull/*:refs/heads/*'
+      
+  - git:
+      repo: 'https://github.com/ScottEvtuch/PSLastPass.git'
+      dest: PSLastPass
+      force: yes
+      refspec: '+refs/pull/*:refs/heads/*'
