@@ -2,7 +2,7 @@
   become: true
   tasks:
   - name: Run the equivalent of "apt-get update" as a separate step
-    apt:
+    apt: update
     update_cache: yes
   
   - name: Install SSH
