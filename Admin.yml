@@ -76,3 +76,9 @@
       dest: PSLastPass
       force: yes
       refspec: '+refs/pull/*:refs/heads/*'
+      
+  - name: Laptop suspend when plugged in
+      dconf:
+      key: "/org/gnome/settings-daemon/plugins.power/sleep-inactive-ac-type"
+      value: "'suspend'"
+      state: present
