@@ -78,7 +78,7 @@
       refspec: '+refs/pull/*:refs/heads/*'
   
   - name: Install python-psutil package
-      apt: name=python-psutil
+    apt: name=python-psutil
   
   - name: Laptop suspend when plugged in
       dconf:
