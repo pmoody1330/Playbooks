@@ -81,7 +81,7 @@
     apt: name=python-psutil
   
   - name: Laptop suspend when plugged in
-      dconf:
+    dconf:
       key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-type"
       value: "'suspend'"
       state: present
