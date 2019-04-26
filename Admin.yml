@@ -82,6 +82,6 @@
   
   - name: Laptop suspend when plugged in
       dconf:
-      key: "/org/gnome/settings-daemon/plugins.power/sleep-inactive-ac-type"
+      key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-type"
       value: "'suspend'"
       state: present
