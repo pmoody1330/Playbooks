@@ -73,7 +73,7 @@
       
   - git:
       repo: 'https://pmoody_TN@bitbucket.org/pmoody_TN/ramp_sql-scripts.git'
-      dest: SQL
+      dest: ~/Documents/SQL
       force: yes
       refspec: '+refs/pull/*:refs/heads/*'
       
