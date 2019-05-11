@@ -67,7 +67,7 @@
 
   - git:
       repo: 'https://pmoody_TN@bitbucket.org/pmoody_TN/powershell_private.git'
-      dest: Powershell
+      dest: ~/Documents/Powershell
       force: yes
       refspec: '+refs/pull/*:refs/heads/*'
       
