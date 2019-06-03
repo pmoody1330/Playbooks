@@ -17,6 +17,9 @@
   - name: Install Notepad++
     command: snap install notepad-plus-plus
     
+  - name: Install fast
+    command: snap install fast
+    
   - name: Install Adobe Flash Player
     apt: name=flashplugin-installer
 
@@ -43,8 +46,11 @@
     apt: name=gparted
     
   - name: Install Docker
-    apt: name=docker.io 
-
+    apt: name=docker.io
+    
+  - name: Install speedtest-cli  
+    apt: name=speedtest-cli
+    
   - name: Create Playbooks directory
     file:
       path: /home/pmoody/Documents/Playbooks
