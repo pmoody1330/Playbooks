@@ -1,0 +1,11 @@
+- hosts: 192.168.1.123
+  become: true
+  tasks: 
+
+- name: select table
+    command: mysql -u ibp-dev_ansible -ppassword ibp_dev -e 'SELECT * FROM sys_apptastic_resource_status'
+    register: table_pre
+
+- name: Do something with table_pre
+  debug: "{{ item }}"
+  with_items: table_pre.stdout_lines
