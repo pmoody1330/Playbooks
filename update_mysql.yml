@@ -1,11 +1,28 @@
 - hosts: 192.168.1.123
-  become: true
-  tasks: 
-
-- name: select table
-    command: mysql -u ibp-dev_ansible -ppassword ibp_dev -e 'SELECT * FROM sys_apptastic_resource_status'
+  become: false
+  tasks:      
+  - name: select table
+    shell: "mysql -u ibp-dev_ansible -ppassword ibp_dev -e 'SELECT in_service FROM sys_apptastic_resource_status WHERE hostname LIKE \"phx01%\"'"
     register: table_pre
+    check_mode: no
+    changed_when: False
 
-- name: Do something with table_pre
-  debug: "{{ item }}"
-  with_items: table_pre.stdout_lines
+  - name: Print table_pre in_service value for phx01
+    debug: 
+      msg: "{{ table_pre.stdout }}"
+
+  - name: disable phx01
+    shell: "mysql -u ibp-dev_ansible -ppassword ibp_dev -e 'UPDATE sys_apptastic_resource_status SET in_service=\"0\" WHERE hostname=\"phx01.dialogtech.com\"'"
+    register: table_set
+    check_mode: no
+    changed_when: False
+
+  - name: select table
+    shell: "mysql -u ibp-dev_ansible -ppassword ibp_dev -e 'SELECT in_service FROM sys_apptastic_resource_status WHERE hostname LIKE \"phx01%\"'"
+    register: table_post
+    check_mode: no
+    changed_when: False
+
+  - name: Print table_post in_service value for phx01
+    debug:
+      msg: "{{ table_post.stdout }}"  
