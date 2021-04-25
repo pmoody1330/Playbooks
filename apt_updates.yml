@@ -1,8 +1,6 @@
 ---
 
 - name: apt update and upgrade restarting if necessary
-  hosts:
-    - Ubunutu20
   become: True
   serial: 1
 
