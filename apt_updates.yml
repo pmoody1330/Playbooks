@@ -1,7 +1,8 @@
 ---
 
 - name: apt update and upgrade restarting if necessary
-  hosts: Ubuntu20
+  hosts: 
+    - Ubuntu20
   become: True
   serial: 1
 
