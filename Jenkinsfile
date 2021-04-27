@@ -1,5 +1,5 @@
 pipeline { 
-    agent any
+    agent { node { label 'Ansible' } }
     stages {
         stage('apt_update debian servers') {
             steps {
