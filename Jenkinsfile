@@ -1,4 +1,4 @@
-Pipeline {
+pipeline {
     agent: Ansible
     stages {
         stage('apt_update debian servers') {
