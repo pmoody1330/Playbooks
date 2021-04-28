@@ -1,6 +1,6 @@
 ---
 # tasks file for updates
-- name: Update apt repo and cache on inventory_hostname
+- name: Update apt repo and cache on {{ inventory_hostname }}
   apt:
     update_cache: yes 
     force_apt_get: yes 
